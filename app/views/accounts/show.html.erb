@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User name:</b>
+  <%= @account.user_name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @account.description %>
+</p>
+
+<p>
+  <b>Premiun:</b>
+  <%= @account.premiun %>
+</p>
+
+<p>
+  <b>Income:</b>
+  <%= @account.income %>
+</p>
+
+<p>
+  <b>Ranking:</b>
+  <%= @account.ranking %>
+</p>
+
+<p>
+  <b>Fee:</b>
+  <%= @account.fee %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%= @account.birthday %>
+</p>
+
+<p>
+  <b>Login time:</b>
+  <%= @account.login_time %>
+</p>
+
+<p>
+  <b>Create date:</b>
+  <%= @account.created_at.strftime("%M:%I %d/%m/%Y") %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>

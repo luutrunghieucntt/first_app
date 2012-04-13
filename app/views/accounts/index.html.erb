@@ -1,0 +1,37 @@
+<h1>Listing accounts</h1>
+
+<table>
+  <tr>
+    <th>User name</th>
+    <th>Description</th>
+    <th>Premiun</th>
+    <th>Income</th>
+    <th>Ranking</th>
+    <th>Fee</th>
+    <th>Birthday</th>
+    <th>Login time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @accounts.each do |account| %>
+  <tr>
+    <td><%= account.user_name %></td>
+    <td><%= account.description %></td>
+    <td><%= account.premiun %></td>
+    <td><%= account.income %></td>
+    <td><%= account.ranking %></td>
+    <td><%= account.fee %></td>
+    <td><%= account.birthday %></td>
+    <td><%= account.login_time %></td>
+    <td><%= link_to 'Show', account %></td>
+    <td><%= link_to 'Edit', edit_account_path(account) %></td>
+    <td><%= link_to 'Destroy', account, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Account', new_account_path %>

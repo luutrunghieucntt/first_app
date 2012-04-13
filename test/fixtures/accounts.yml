@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_name: MyString
+  description: MyText
+  premiun: false
+  income: 1
+  ranking: 1.5
+  fee: 9.99
+  birthday: 2012-04-01
+  login_time: 2012-04-01 08:58:18
+
+two:
+  user_name: MyString
+  description: MyText
+  premiun: false
+  income: 1
+  ranking: 1.5
+  fee: 9.99
+  birthday: 2012-04-01
+  login_time: 2012-04-01 08:58:18
