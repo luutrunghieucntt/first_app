@@ -43,6 +43,12 @@
     <%= f.label :login_time %><br />
     <%= f.time_select :login_time %>
   </div>
+  
+  <div class="field">
+    <%= f.label :login_time %><br />
+   <%= select_date Date.today, :prefix => :end_date %>
+<%= label_tag(:lb, "My Label") %>  
+  
   <div class="actions">
     <%= f.submit %>
   </div>

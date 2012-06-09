@@ -1,5 +1,11 @@
 FirstApp::Application.routes.draw do
+
+
   resources :accounts
+  
+  resources :accounts do
+    resources :dia_chis
+  end
   get "home/index"
 
   # The priority is based upon order of creation:

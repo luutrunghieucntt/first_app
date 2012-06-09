@@ -1,0 +1,35 @@
+<%= form_for([@account, @diachi]) do |f| %>
+  <% if @diachi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@diachi.errors.count, "error") %> prohibited this diachi from being saved:</h2>
+
+      <ul>
+      <% @diachi.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :duong %><br />
+    <%= f.text_field :duong %>
+  </div>
+  <div class="field">
+    <%= f.label :phuong %><br />
+    <%= f.text_field :phuong %>
+  </div>
+  <div class="field">
+    <%= f.label :thanhpho %><br />
+    <%= f.text_field :thanhpho %>
+  </div>
+  <div class="field">
+    <%= f.label :tinh %><br />
+    <%= f.text_field :tinh %>
+  </div>
+  
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

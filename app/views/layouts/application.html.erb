@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FirstApp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Mr. Hieu | Web Developer</title>
+  <%= stylesheet_link_tag "style", :media => "all" %>
+   <%= javascript_include_tag "modernizr-1.1.min" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header id="site_head"><!--useful to create the 960px limit-->
+		<div class="header_cont">
+		<h1><a href="#">mr. hieu</a></h1>
+		
+		<nav class="head_nav">
+		<ul>
+			<li class="rss"><a href="#">Subscribe</a></li>
+			<li class="twitter"><a href="#">Follow Me</a></li>
+			<li class="home"><a href="<%= root_url%>">Home</a></li>
+			<li><a href="<%= accounts_path%>">List Accounts</a></li>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		</nav>
+		</div>
+	</header>
+	
+	<div id="main_content">
+		<table><tr><td>
 <%= yield %>
-
+</td><td>
+<%= yield :layout2 %>
+</td></tr></table>
+</div>
 </body>
 </html>

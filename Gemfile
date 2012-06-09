@@ -21,13 +21,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem "git-rails", '~> 0.2.1'
+#gem "git-rails", '~> 0.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'execjs'
-gem 'therubyracer', :platforms => :ruby
-gem 'mysql2', :group => :development
+#gem 'execjs'
+#gem 'therubyracer', :platforms => :ruby
+#gem 'mysql2', :group => :development
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 

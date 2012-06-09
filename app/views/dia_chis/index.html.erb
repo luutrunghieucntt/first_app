@@ -1,0 +1,8 @@
+<h1>Dia chi cua <%= @account.user_name%></h1>
+
+	<%@diachis.each do |diachi|%>
+		<p> <%= diachi.duong%> - <%= diachi.phuong%> - <%= diachi.thanhpho%> - <%= diachi.tinh%>
+			</p>		
+	<%end%>
+
+

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  duong: MyString
+  phuong: MyString
+  thanhpho: MyString
+  tinh: MyString
+  account: 
+
+two:
+  duong: MyString
+  phuong: MyString
+  thanhpho: MyString
+  tinh: MyString
+  account: 

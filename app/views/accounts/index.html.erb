@@ -1,6 +1,6 @@
 <h1>Listing accounts</h1>
 
-<table>
+<table class="table-css1" cellpadding="0" cellspacing="0">
   <tr>
     <th>User name</th>
     <th>Description</th>
@@ -10,6 +10,7 @@
     <th>Fee</th>
     <th>Birthday</th>
     <th>Login time</th>
+    <th>Address </th>
     <th></th>
     <th></th>
     <th></th>
@@ -25,12 +26,19 @@
     <td><%= account.fee %></td>
     <td><%= account.birthday %></td>
     <td><%= account.login_time %></td>
+    <td>
+    	<%account.dia_chis.each do |dc|%>
+    	<%= dc.duong%> 
+    	
+    	<%end%>
+    	</td>
     <td><%= link_to 'Show', account %></td>
     <td><%= link_to 'Edit', edit_account_path(account) %></td>
     <td><%= link_to 'Destroy', account, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
+
 
 <br />
 
