@@ -63,12 +63,12 @@ header#site_head {
 	}
 	
 	.header_cont h1 {
-		//text-indent:-9999px;
+		text-indent:-9999px;
 		float: left;
 	}
 	
 	.header_cont h1 a {
-		//background: url(/images/logo.png) no-repeat;
+		background: url(/images/logo.png) no-repeat;
 		width: 143px;
 		height: 45px;
 		display: block;

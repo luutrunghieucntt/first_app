@@ -19,12 +19,12 @@ ActiveRecord::Schema.define(:version => 20120428121843) do
     t.boolean  "premiun"
     t.integer  "income"
     t.float    "ranking"
-    t.decimal  "fee",                      :precision => 10, :scale => 0
+    t.decimal  "fee",         :precision => 10, :scale => 0
     t.date     "birthday"
     t.time     "login_time"
-    t.datetime "created_at",                                              :null => false
-    t.datetime "updated_at",                                              :null => false
-    t.string   "status",      :limit => 0
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+    t.string   "status"
   end
 
   create_table "addresses", :force => true do |t|
@@ -59,9 +59,9 @@ ActiveRecord::Schema.define(:version => 20120428121843) do
   add_index "dia_chis", ["account_id"], :name => "index_dia_chis_on_account_id"
 
   create_table "members", :force => true do |t|
-    t.string   "status",     :limit => 0
-    t.datetime "created_at",              :null => false
-    t.datetime "updated_at",              :null => false
+    t.string   "status"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
